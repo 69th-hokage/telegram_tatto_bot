@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 
 from aiogram import Bot, Dispatcher, F
+from aiohttp import web
 from aiogram.filters import CommandStart
 from aiogram.types import (
     Message,
@@ -24,6 +25,7 @@ ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 DATA_FILE = "applications.json"
 LOG_FILE = "bot.log"
+PORT = int(os.getenv("PORT", "10000"))
 
 # =========================
 # ЛОГИРОВАНИЕ
@@ -369,12 +371,29 @@ async def booking_contact_manual(message: Message, state: FSMContext):
     await finalize_application(message, state, contact)
 
 
+async def healthcheck(request):
+    return web.Response(text="OK")
+
 # =========================
 # ЗАПУСК
 # =========================
 async def main():
+    app = web.Application()
+    app.router.add_get("/", healthcheck)
+    app.router.add_get("/health", healthcheck)
+
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, "0.0.0.0", PORT)
+    await site.start()
+
+    logging.info(f"HTTP healthcheck запущен на порту {PORT}")
     logging.info("Бот запущен")
-    await dp.start_polling(bot)
+
+    try:
+        await dp.start_polling(bot)
+    finally:
+        await runner.cleanup()
 
 
 if __name__ == "__main__":
