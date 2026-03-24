@@ -83,7 +83,7 @@ faq_keyboard = ReplyKeyboardMarkup(
 contact_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="Поделиться контактом", request_contact=True)],
-        [KeyboardButton(text="Ввести контакт вручную")],
+        [KeyboardButton(text="Ввести данные вручную")],
     ],
     resize_keyboard=True,
     one_time_keyboard=True,
@@ -180,7 +180,7 @@ async def finalize_application(message: Message, state: FSMContext, contact_valu
         logging.error(f"Ошибка отправки админу: {e}")
 
     await message.answer(
-        "Спасибо! Заявка отправлена. Я передал информацию мастеру, с тобой свяжутся для уточнения деталей.",
+        "Спасибо ! Заявка отправлена. Я передал информацию, с тобой свяжутся для уточнения деталей !",
         reply_markup=main_keyboard
     )
 
@@ -195,7 +195,7 @@ async def start_handler(message: Message, state: FSMContext):
     await state.clear()
     logging.info(f"Пользователь {message.from_user.id} запустил бота")
     await message.answer(
-        "Привет! Я бот для записи на тату-сеанс.\n"
+        "Привет ! Я бот для записи на тату-сеанс.\n"
         "Здесь можно узнать ответы на частые вопросы и оставить заявку.",
         reply_markup=main_keyboard
     )
@@ -213,14 +213,15 @@ async def faq_menu(message: Message):
 async def faq_price(message: Message):
     await message.answer(
         "Стоимость зависит от размера, сложности эскиза и места нанесения. "
-        "Для точной оценки лучше отправить описание идеи или референс."
+        "Для точной оценки лучше отправить описание идеи или референс. " \
+        "Маленькую татуировку, размером около 10-ти сантиметров я набью за 4 тысячи рублей. ^^"
     )
 
 
 @dp.message(F.text == "Как подготовиться к сеансу?")
 async def faq_prepare(message: Message):
     await message.answer(
-        "Перед сеансом желательно выспаться, поесть, не употреблять алкоголь за сутки "
+        "Перед сеансом желательно выспаться, поесть, не употреблять алкоголь за сутки (энергетики тоже тучше не пить)"
         "и не приходить с повреждённой кожей в зоне татуировки."
     )
 
@@ -229,7 +230,7 @@ async def faq_prepare(message: Message):
 async def faq_sketch(message: Message):
     await message.answer(
         "Да, конечно. Можно прийти со своим эскизом или референсом, "
-        "а также доработать идею вместе с мастером."
+        "а также доработать идею вместе со мной."
     )
 
 
@@ -287,16 +288,15 @@ async def booking_description_with_photo(message: Message, state: FSMContext):
         )
         return
 
-    photo_ids = [photo.file_id for photo in message.photo]
     largest_photo = message.photo[-1]
     await state.update_data(
         description=description,
         reference_file_id=largest_photo.file_id,
-        reference_file_ids=photo_ids,
+        reference_file_ids=[largest_photo.file_id],
     )
     await state.set_state(BookingStates.waiting_for_dates)
     await message.answer(
-        "Отлично, описание и референс получил.\n"
+        "Отлично, описание и референс получил !\n"
         "Теперь напиши удобные даты или дни для записи.\n"
         "Например: после 20 апреля, по выходным, вечером в будни.",
         reply_markup=ReplyKeyboardRemove(),
@@ -312,7 +312,7 @@ async def booking_description_text(message: Message, state: FSMContext):
     )
     await state.set_state(BookingStates.waiting_for_dates)
     await message.answer(
-        "Принял описание.\n"
+        "Принял описание !\n"
         "Теперь напиши удобные даты или дни для записи.\n"
         "Например: после 20 апреля, по выходным, вечером в будни.",
         reply_markup=ReplyKeyboardRemove(),
