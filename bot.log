@@ -1,0 +1,65 @@
+2026-03-24 20:41:52,879 | INFO | Бот запущен
+2026-03-24 20:41:52,880 | INFO | Start polling
+2026-03-24 20:41:54,304 | INFO | Run polling for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 20:41:54,577 | INFO | Пользователь 1002695609 запустил бота
+2026-03-24 20:41:55,695 | INFO | Update id=284271060 is handled. Duration 1118 ms by bot id=8221634803
+2026-03-24 20:42:09,581 | INFO | Пользователь 1002695609 начал оформление заявки
+2026-03-24 20:42:09,879 | INFO | Update id=284271061 is handled. Duration 298 ms by bot id=8221634803
+2026-03-24 20:42:28,770 | INFO | Update id=284271062 is handled. Duration 295 ms by bot id=8221634803
+2026-03-24 20:42:42,768 | INFO | Update id=284271063 is handled. Duration 551 ms by bot id=8221634803
+2026-03-24 20:43:42,238 | INFO | Update id=284271064 is handled. Duration 344 ms by bot id=8221634803
+2026-03-24 20:45:28,314 | INFO | Update id=284271065 is handled. Duration 298 ms by bot id=8221634803
+2026-03-24 20:46:21,844 | INFO | Заявка сохранена от пользователя 1002695609
+2026-03-24 20:46:22,114 | ERROR | Ошибка отправки админу: Telegram server says - Bad Request: chat not found
+2026-03-24 20:46:22,417 | INFO | Update id=284271066 is handled. Duration 575 ms by bot id=8221634803
+2026-03-24 20:50:13,815 | WARNING | Received SIGINT signal
+2026-03-24 20:50:13,817 | INFO | Polling stopped for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 20:50:13,817 | INFO | Polling stopped
+2026-03-24 20:52:44,867 | INFO | Бот запущен
+2026-03-24 20:52:44,867 | INFO | Start polling
+2026-03-24 20:52:46,124 | INFO | Run polling for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 20:52:53,019 | INFO | Пользователь 1002695609 начал оформление заявки
+2026-03-24 20:52:54,161 | INFO | Update id=284271067 is handled. Duration 1143 ms by bot id=8221634803
+2026-03-24 20:53:12,677 | INFO | Update id=284271068 is handled. Duration 306 ms by bot id=8221634803
+2026-03-24 20:57:31,916 | INFO | Update id=284271069 is handled. Duration 298 ms by bot id=8221634803
+2026-03-24 20:57:44,124 | INFO | Update id=284271070 is handled. Duration 304 ms by bot id=8221634803
+2026-03-24 20:57:48,539 | INFO | Заявка сохранена от пользователя 1002695609
+2026-03-24 20:57:48,828 | ERROR | Ошибка отправки админу: Telegram server says - Bad Request: chat not found
+2026-03-24 20:57:49,147 | INFO | Update id=284271071 is handled. Duration 611 ms by bot id=8221634803
+2026-03-24 21:00:07,812 | INFO | Пользователь 1002695609 начал оформление заявки
+2026-03-24 21:00:08,116 | INFO | Update id=284271072 is handled. Duration 306 ms by bot id=8221634803
+2026-03-24 21:00:11,377 | INFO | Update id=284271073 is handled. Duration 325 ms by bot id=8221634803
+2026-03-24 21:00:21,403 | INFO | Update id=284271074 is handled. Duration 314 ms by bot id=8221634803
+2026-03-24 21:00:30,943 | INFO | Update id=284271075 is handled. Duration 301 ms by bot id=8221634803
+2026-03-24 21:00:34,213 | INFO | Заявка сохранена от пользователя 1002695609
+2026-03-24 21:00:34,494 | ERROR | Ошибка отправки админу: Telegram server says - Bad Request: chat not found
+2026-03-24 21:00:34,798 | INFO | Update id=284271076 is handled. Duration 588 ms by bot id=8221634803
+2026-03-24 21:02:11,874 | INFO | Пользователь 1002695609 запустил бота
+2026-03-24 21:02:12,207 | INFO | Update id=284271077 is handled. Duration 333 ms by bot id=8221634803
+2026-03-24 21:02:15,313 | INFO | Update id=284271078 is handled. Duration 302 ms by bot id=8221634803
+2026-03-24 21:02:17,645 | INFO | Update id=284271079 is handled. Duration 357 ms by bot id=8221634803
+2026-03-24 21:02:22,038 | INFO | Update id=284271080 is handled. Duration 296 ms by bot id=8221634803
+2026-03-24 21:02:26,149 | INFO | Update id=284271081 is handled. Duration 448 ms by bot id=8221634803
+2026-03-24 21:02:28,295 | INFO | Update id=284271082 is handled. Duration 303 ms by bot id=8221634803
+2026-03-24 21:02:33,530 | INFO | Update id=284271083 is not handled. Duration 2 ms by bot id=8221634803
+2026-03-24 21:02:38,030 | INFO | Пользователь 1002695609 запустил бота
+2026-03-24 21:02:38,334 | INFO | Update id=284271084 is handled. Duration 304 ms by bot id=8221634803
+2026-03-24 21:02:41,442 | INFO | Update id=284271085 is handled. Duration 337 ms by bot id=8221634803
+2026-03-24 21:03:51,748 | WARNING | Received SIGINT signal
+2026-03-24 21:03:51,749 | INFO | Polling stopped for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 21:03:51,749 | INFO | Polling stopped
+2026-03-24 21:03:57,161 | INFO | Бот запущен
+2026-03-24 21:03:57,162 | INFO | Start polling
+2026-03-24 21:03:58,510 | INFO | Run polling for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 21:05:13,171 | INFO | Пользователь 1846089823 запустил бота
+2026-03-24 21:05:14,290 | INFO | Update id=284271086 is handled. Duration 1119 ms by bot id=8221634803
+2026-03-24 21:05:18,365 | INFO | Пользователь 1846089823 начал оформление заявки
+2026-03-24 21:05:18,691 | INFO | Update id=284271087 is handled. Duration 328 ms by bot id=8221634803
+2026-03-24 21:05:28,141 | INFO | Update id=284271088 is handled. Duration 315 ms by bot id=8221634803
+2026-03-24 21:05:51,124 | INFO | Update id=284271089 is handled. Duration 307 ms by bot id=8221634803
+2026-03-24 21:06:00,198 | INFO | Update id=284271090 is handled. Duration 343 ms by bot id=8221634803
+2026-03-24 21:06:03,033 | INFO | Заявка сохранена от пользователя 1846089823
+2026-03-24 21:06:03,707 | INFO | Update id=284271091 is handled. Duration 677 ms by bot id=8221634803
+2026-03-24 21:08:07,298 | WARNING | Received SIGINT signal
+2026-03-24 21:08:07,298 | INFO | Polling stopped for bot @xiixiixtattbot id=8221634803 - 'XIIXIIXtatto bot'
+2026-03-24 21:08:07,299 | INFO | Polling stopped
