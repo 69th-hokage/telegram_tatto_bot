@@ -19,8 +19,8 @@ from aiogram.fsm.context import FSMContext
 # =========================
 # НАСТРОЙКИ
 # =========================
-BOT_TOKEN = "8221634803:AAEHZi2Omv4mNO22UJLbv_6c0YNKrq-BetA"
-ADMIN_ID = 1002695609
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 DATA_FILE = "applications.json"
 LOG_FILE = "bot.log"
@@ -34,6 +34,12 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s",
     encoding="utf-8"
 )
+
+if not BOT_TOKEN:
+    raise ValueError("Не задан BOT_TOKEN. Укажи его в переменных окружения.")
+
+if ADMIN_ID <= 0:
+    raise ValueError("Не задан ADMIN_ID. Укажи корректный Telegram ID в переменных окружения.")
 
 # =========================
 # ИНИЦИАЛИЗАЦИЯ
